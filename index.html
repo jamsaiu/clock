@@ -64,21 +64,6 @@
       color: white;
     }
 
-    /* Container holding the image and the text */
-    .container {
-      position: relative;
-      text-align: center;
-      color: white;
-    }
-
-    /* Centered text */
-    .centered {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
     /*Fade in*/
     .fade-in {
       animation: fadeIn ease 10s;
@@ -86,6 +71,22 @@
       -moz-animation: fadeIn ease 10s;
       -o-animation: fadeIn ease 10s;
       -ms-animation: fadeIn ease 10s;
+    }
+
+    /* Container holding the image and the text */
+    .container {
+      position: relative;
+    }
+
+    /* Bottom right text */
+    .text-block {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+      padding-left: 20px;
+      padding-right: 20px;
     }
 
     @keyframes fadeIn {
@@ -155,8 +156,11 @@
     <br> <br>
     <div class="fade-in">
       <div class="container">
-        <img src="https://media1.thehungryjpeg.com/thumbs/800_3492670_f4972023a382c910dbc62de888f90d831aa004f1.jpg" style="width:100%;">
-        <div class="centered">About Us</div>
+        <img src="http://earthporm.com/wp-content/uploads/2015/04/tr10.jpg" style="width:100%;">
+        <div class="text-block">
+          <h4 class = "heading">About Us</h4>
+          <p>What we are all about</p>
+        </div>
       </div>
       <img
         src="https://res.cloudinary.com/teepublic/image/private/s--_LBdBz2e--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1546890479/production/designs/3909373_0.jpg"
