@@ -32,6 +32,10 @@
       color: purple;
     }
 
+    .header {
+      font-family: 'Times New Roman', Times, serif;
+    }
+
     /* Add a black background color to the top navigation */
     .topnav {
       background-color: #333;
@@ -60,8 +64,22 @@
       color: white;
     }
 
-    /*Fade in*/
+    /* Container holding the image and the text */
+    .container {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
 
+    /* Centered text */
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    /*Fade in*/
     .fade-in {
       animation: fadeIn ease 10s;
       -webkit-animation: fadeIn ease 10s;
@@ -135,10 +153,14 @@
     <a href="creatures.html">Creatures of the Occult</a>
     <a href="rituals.html">Rituals of the Forgotten</a>
     <br> <br>
-    <div class = "fade-in">
-    <img
-      src="https://res.cloudinary.com/teepublic/image/private/s--_LBdBz2e--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1546890479/production/designs/3909373_0.jpg"
-      width="1000" height="1000">
+    <div class="fade-in">
+      <div class="container">
+        <img src="https://media1.thehungryjpeg.com/thumbs/800_3492670_f4972023a382c910dbc62de888f90d831aa004f1.jpg" style="width:100%;">
+        <div class="centered">About Us</div>
+      </div>
+      <img
+        src="https://res.cloudinary.com/teepublic/image/private/s--_LBdBz2e--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1546890479/production/designs/3909373_0.jpg"
+        width="1000" height="1000">
     </div>
   </center>
 </body>
